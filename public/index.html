@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ניהול קבצים</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <h1>ניהול קבצים</h1>
+
+    <!-- העלאת קובץ -->
+    <h2>העלה קובץ</h2>
+    <input type="file" id="fileInput">
+    <button onclick="uploadFile()">העלה</button>
+    <p id="uploadStatus"></p>
+    <a id="linkref"  style="text-decoration: none;"></a>
+
+    <!-- הוספת בר טעינה -->
+<div id="loading" style="display: none;">
+    <p>מתבצעת סריקה...</p>
+    <div style="width: 100%; background-color: #f3f3f3; border: 1px solid #ccc; margin-top: 10px;">
+        <div id="progress" style="width: 0%; background-color: #4caf50; height: 20px;"></div>
+    </div>
+</div>
+
+    <hr>
+
+
+    <!-- חיפוש קובץ
+    <h2>מצא קובץ לפי שם</h2>
+    <input type="text" id="filenameInput" placeholder="הכנס שם קובץ">
+    <button onclick="fetchFile()">מצא</button>
+    <p id="fileDetails"></p> -->
+
+
+    <h2>רשימת קבצים</h2>
+<button onclick="fetchFiles()">הצג קבצים</button>
+<div id="filesContainer"></div> <!-- כאן יופיעו הקבצים -->
+
+
+
+    <script src="/public/script.js"></script>
+</body>
+</html>

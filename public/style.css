@@ -1,0 +1,112 @@
+/* הגדרת גופן בסיסי לדף */
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* כותרת ראשית */
+h1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+/* כותרת של כל סעיף */
+h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* עיצוב של שדות קלט וכפתורים */
+input[type="file"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* כפתור העלאה */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+}
+
+/* עיצוב של כפתור כשיש עליו ריחוף */
+button:hover {
+    background-color: #45a049;
+}
+
+/* עיצוב של הקישור אחרי העלאה */
+#linkref {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    display: none; /* מתחילים עם חבוי */
+}
+
+/* עיצוב של תיבת ההודעות */
+#uploadStatus {
+    color: #ff5722;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* עיצוב של הרשימה של הקבצים */
+#filesContainer {
+    margin-top: 20px;
+}
+
+#filesContainer div {
+    margin-bottom: 10px;
+}
+
+#filesContainer a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+#filesContainer a:hover {
+    text-decoration: underline;
+}
+
+/* סגנון להפרדה בין חלקים בדף */
+hr {
+    border: 1px solid #ddd;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* עיצוב של שדות חיפוש */
+#filenameInput {
+    width: 80%;
+    margin-right: 10px;
+}
+
+button + #filenameInput {
+    display: inline-block;
+}
+#loading {
+    display: none;
+    text-align: center;
+}
+
+#progress {
+    height: 20px;
+    background-color: green;
+}
