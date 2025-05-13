@@ -1,8 +1,9 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
-const connectionString = "";
+const connectionString = process.env.MONGO_STR;
 const bodyParser = require('body-parser');
 
 // Connect to MongoDB
